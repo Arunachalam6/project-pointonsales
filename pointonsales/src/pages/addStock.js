@@ -5,20 +5,20 @@ import { Formik } from "formik";
 
 //const Product=[];
 function AddStock() {
-    // const Products=[
-       // {
-           // ProductId:"001",
-            //ProductSku:"SH001",
-            //ProductName:"Sample1",
-            //ProductCategory:"xyz",
-        //},
-        //{
-            //ProductId:"002",
-            //ProductSku:"SH001",
-            //ProductName:"Sample2",
-            //ProductCategory:"xxxyyyzzz",
-        //},
-    //];   
+    const Products=[
+       {
+           ProductId:"001",
+            ProductSku:"SH001",
+            ProductName:"Sample1",
+            ProductCategory:"xyz",
+        },
+        {
+            ProductId:"002",
+            ProductSku:"SH001",
+            ProductName:"Sample2",
+            ProductCategory:"xxxyyyzzz",
+        },
+    ];   
     //const Supplier=[
       //{
        // SupplierId:1,
@@ -105,11 +105,11 @@ function AddStock() {
                                                                 Product
                                                             </label>
                                                             <select>
-                                                                Products.map(function(item,index){
-                                                                    <Option value={ProductId}>
-                                                                        {Item.ProductName}
-                                                                    </Option>
-                                                                });
+                                                                {Products.map(function(item,index){
+                                                                    <option value={item.ProductId}>
+                                                                        {item.ProductName}
+                                                                    </option>
+                                                                })};
                                                             </select>
                                                         </div>
                                                         <div className="col-xxl-6 col-xl-6 col-md-6 col-sm-12">

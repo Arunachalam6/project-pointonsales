@@ -104,11 +104,75 @@ function SideMenu() {
             </li>
 
             <li className="sidebar-item">
+                <Link className="sidebar-link" to="/addcategory">
+                    <span>
+                    <i className="ti ti-layout-dashboard"></i>
+                    </span>
+                    <span className="hide-menu">Add Category</span>
+                </Link>
+            </li>
+
+            <li className="sidebar-item">
+                <Link className="sidebar-link" to="/addproduct">
+                    <span>
+                    <i className="ti ti-layout-dashboard"></i>
+                    </span>
+                    <span className="hide-menu">Add Product</span>
+                </Link>
+            </li>
+            
+            <li className="sidebar-item">
+                <Link className="sidebar-link" to="/addstock">
+                    <span>
+                    <i className="ti ti-layout-dashboard"></i>
+                    </span>
+                    <span className="hide-menu">Add stock</span>
+                </Link>
+            </li>
+
+            <li className="sidebar-item">
+                <Link className="sidebar-link" to="/editcategory">
+                    <span>
+                    <i className="ti ti-layout-dashboard"></i>
+                    </span>
+                    <span className="hide-menu">Edit Category</span>
+                </Link>
+            </li>
+
+            <li className="sidebar-item">
+                <Link className="sidebar-link" to="/editproduct">
+                    <span>
+                    <i className="ti ti-layout-dashboard"></i>
+                    </span>
+                    <span className="hide-menu">Edit Product</span>
+                </Link>
+            </li>
+
+
+            <li className="sidebar-item">
                 <Link className="sidebar-link" to="/managecustomer">
                     <span>
                     <i className="ti ti-layout-dashboard"></i>
                     </span>
                     <span className="hide-menu">Manage Customer</span>
+                </Link>
+            </li>
+
+            <li className="sidebar-item">
+                <Link className="sidebar-link" to="/managecategory">
+                    <span>
+                    <i className="ti ti-layout-dashboard"></i>
+                    </span>
+                    <span className="hide-menu">Manage Category</span>
+                </Link>
+            </li>
+
+            <li className="sidebar-item">
+                <Link className="sidebar-link" to="/manageproduct">
+                    <span>
+                    <i className="ti ti-layout-dashboard"></i>
+                    </span>
+                    <span className="hide-menu">Manage Product</span>
                 </Link>
             </li>
 

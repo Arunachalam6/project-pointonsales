@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import Nav from './nav';
 import SideMenu from './sideMenu';
 import TopBar from './topBar';
 
