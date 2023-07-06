@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SideMenu from "./sideMenu";
 import TopBar from "./topBar";
 import { Formik } from "formik";
+import { firestore } from "../config/firestore";
+import { addDoc,getDocs, collection } from "@firebase/firestore";
 
 import {
     DatatableWrapper,
@@ -23,6 +25,8 @@ import {
   
 
 function ManageCustomer() {
+
+  const ref=collection(firestore,"customer_master");
 
     const customerData=[
         {
@@ -106,6 +110,17 @@ function ManageCustomer() {
             state: "tamilnadu",
         },
     ];
+
+    useEffect(()=>{
+      getCustomer()
+    },[])
+
+    async function getCustomer() {
+      const cusList=await getDocs(ref);
+      const customers = cusList.docs.map(doc => doc.data());
+      console.log(customers);
+    }
+
   return (
     <>
       <div
